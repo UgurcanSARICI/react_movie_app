@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import GoogleIcon from "../assets/icons/GoogleIcon";
+import { createUser } from "../auth/firebase";
 
 const Register = () => {
   //* ayrı stateler
@@ -18,6 +19,7 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(firstName, lastName);
+    createUser(email, password);
   };
 
   // const hadleChange = (e) =>
