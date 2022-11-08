@@ -6,10 +6,14 @@ import { AuthContext } from "../context/AuthContextProvider";
 
 const Navbar = () => {
   const { currentUser } = useContext(AuthContext);
-  // const currentUser = { displayName: "uğurcan sarıcı" };
+  //* with custom hook
+  // const { currentUser } = useAuthContext();
+
+  // const currentUser = { displayName: "felix franko" };
+  // const currentUser = false;
   return (
     <>
-      <nav className="w-full flex flex-wrap items-center justify-between py-3 text-white bg-gray-900 text-gray-200 shadow-lg fixed-top">
+      <nav className="w-full flex flex-wrap items-center justify-between py-3 bg-gray-900 text-white shadow-lg navbar navbar-expand-lg fixed-top">
         <div className="container-fluid w-full flex items-center justify-between px-6">
           <Link className="text-2xl  pr-2 font-semibold" to="/">
             React Movie App
@@ -30,7 +34,7 @@ const Navbar = () => {
                 aria-expanded="false"
               >
                 <img
-                  src={currentUser?.photoUrl || avatar}
+                  src={currentUser?.photoURL || avatar}
                   className="rounded-full"
                   style={{ height: 25, width: 25 }}
                   alt="user"
@@ -39,7 +43,7 @@ const Navbar = () => {
                 />
               </span>
               <ul
-                className="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 m-0 bg-clip-padding border-none left-auto right-0"
+                className="dropdown-menu min-w-max absolute bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0"
                 aria-labelledby="dropdownMenuButton2"
               >
                 <li>
