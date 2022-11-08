@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import avatar from "../assets/icons/avatar.png";
 import { logOut } from "../auth/firebase";
+import { AuthContext } from "../context/AuthContextProvider";
 
 const Navbar = () => {
-  const currentUser = { displayName: "uğurcan sarıcı" };
+  const { currentUser } = useContext(AuthContext);
+  // const currentUser = { displayName: "uğurcan sarıcı" };
   return (
     <>
       <nav className="w-full flex flex-wrap items-center justify-between py-3 text-white bg-gray-900 text-gray-200 shadow-lg fixed-top">
