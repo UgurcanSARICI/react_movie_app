@@ -77,13 +77,13 @@ body {
 /* Login Custom CSS */
 
 .custom-linear-gradient::before {
-  background: linear-gradient(0deg, transparent, #ff4b45);
+  background: linear-gradient(0deg, transparent, #4673d4);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
 }
 
 .custom-linear-gradient::after {
-  background: linear-gradient(0deg, transparent, #ff4b45);
+  background: linear-gradient(0deg, transparent, #4673d4);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
   animation-delay: -3s;
@@ -106,7 +106,7 @@ body {
 
 .inputbox input:valid ~ span,
 .inputbox input:focus ~ span {
-  color: #ff4b45;
+  color: #4673d4;
   transform: translateY(-34px);
   font-size: 0.75em;
 }
@@ -128,7 +128,7 @@ body {
 
 .links-a:hover,
 .links-a:nth-child(2) {
-  color: #ff4b45;
+  color: #4673d4;
 }
 
 .custom-input {
