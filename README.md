@@ -26,9 +26,7 @@ Project aims to create a Movie App with React.
 
 ```
 Movie App (folder)
-|
-|----readme.md         
-SOLUTION
+|       
 ├── public
 │     └── index.html
 ├── src
@@ -60,6 +58,7 @@ SOLUTION
 ├── package.json
 ├── .env
 └── yarn.lock
+└── readme.md  
 ```
 
 
