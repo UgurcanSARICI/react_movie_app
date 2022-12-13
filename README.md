@@ -83,6 +83,7 @@ Movie App (folder)
 - I added some restrictions. Without logging in user can not reach details page or can not make a search.
 - I used useNavigate to redirect to desired pages.
 ------
+
 I used;
 - Firebase
 - React-toastify
